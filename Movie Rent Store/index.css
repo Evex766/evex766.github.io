@@ -1,0 +1,86 @@
+body {
+    background-color: #F6F6F6;
+    font-family: 'Raleway', sans-serif url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+   background-image: url(https://cdn.wallpapersafari.com/47/56/wnJ4W2.jpg) ;
+  }
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #efbd33;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .card {
+    background-color: #302f2f;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 20px;
+    padding: 20px;
+    position: relative;
+  }
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  
+  .card:hover {
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.4);
+    border: #cecbd0 solid 7px;
+    
+
+    }
+
+    h2{
+        text-align: center;
+        color: #efbd33;
+       font-size: 5rem;
+    font-family: 'Mulan';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Mulan'), url('https://fonts.cdnfonts.com/s/4923/mulan.woff') format('woff');
+}
+    
+
+
+  .button {
+   
+    display: inline-block;
+    position: absolute;
+    background-color: #13c6cc;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    top: -30px;
+    left: -30px;
+  }
+
+  button:hover {
+
+    background-color: #cf0bed;
+  }
+
+
+  
