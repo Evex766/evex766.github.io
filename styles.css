@@ -1,0 +1,619 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Navbar section */
+.navbar {
+  z-index: 999;
+  top: 0;
+  background: linear-gradient(135deg, #ff94a9, #94d0ff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+  position: sticky;
+  margin-bottom: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar li:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+/* Company Name-Navbar */
+
+.company-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f0e8e8;
+}
+
+.company-name::after {
+  content: "Heim";
+  color: #13404b;
+}
+
+.company-name:hover {
+  width: 100%;
+  height: 100%;
+  background-color: #1f1d1d;
+  border-radius: 5px;
+  color: #ff94a9;
+}
+
+/* Banner */
+.banner {
+  padding: 0%;
+  position: relative;
+  height: 100vh;
+  background-color: #312828;
+  background-blend-mode: overlay;
+  background-image: url("./images/WhatsApp\ Image\ 2023-04-16\ at\ 17.36.27.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  -webkit-text-stroke: -5px rgb(207, 191, 191);
+}
+
+.text-overlay h1 {
+  font-size: 90px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.text-overlay h1::after {
+  content: "Heim";
+  color: #15e0f3;
+}
+
+/* About Section */
+
+.company-intro {
+  background-color: rgba(141, 132, 170, 0.3);
+  padding: 50px;
+  display: flex;
+}
+
+.company-intro .content {
+  flex: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.company-intro h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+#h2-title::after {
+  content: "Heim";
+  color: #24c7d6;
+}
+
+.company-intro .photo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.company-intro .photo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Day-Trip section*/
+
+.dayTrip-section h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #0e0d0d;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.dayTrip-section p {
+  padding: 15px;
+  margin: 10px;
+  font-size: 20px;
+  color: #1f1e1e;
+  text-align: left;
+  text-align: center;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 30px;
+}
+
+.dayTrip-section {
+  background: linear-gradient(135deg, #ff94a9, #94d0ff);
+  padding: 70px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+/*Day trip cards*/
+.card {
+  width: 300px;
+  height: 400px;
+  padding-bottom: 20px;
+  margin: 10px;
+  background: #d7e1dc;
+  border-radius: 5px;
+  display: flex;
+  vertical-align: top;
+  justify-content: space-evenly;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 18px 20px 3px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 18px 20px 3px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 18px 20px 3px 2px rgba(0, 0, 0, 0.75);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card h3 {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bolder;
+}
+.card p {
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+  color: #312828;
+}
+.btn {
+  color: #181717;
+  border: none;
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-image: linear-gradient(135deg, #ff94a9, #94d0ff);
+  color: black;
+  font-weight: bold;
+}
+
+/*Service section*/
+
+.services {
+  background: rgba(141, 132, 170, 0.3);
+  margin: 0 auto;
+  padding: 60px;
+  text-align: center;
+}
+
+#h3-main-title {
+  text-decoration: underline #161616;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+  padding: 20px;
+  text-decoration: underline;
+}
+
+.trip-card {
+  background-color: rgba(222, 198, 198, 0.1);
+  padding: 10px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  max-width: 1000px;
+  border: 1px solid #a9a4a4;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.trip-card h3 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-family: "BronatteDisplay", sans-serif;
+}
+.trip-card p {
+  text-align: left;
+  padding-left: 5px;
+}
+
+#trip-card-p {
+  color: #a43333;
+}
+
+.book-now {
+  background-color: #1e5799;
+  color: #fff;
+  border: none;
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-now:hover {
+  background-image: linear-gradient(135deg, #ff94a9, #94d0ff);
+  color: black;
+  font-weight: bold;
+}
+
+/* Gallery section*/
+
+.gallery {
+  padding: 70px;
+  margin: 0;
+  text-align: center;
+  background-color: #f8d3e5;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+  padding: 15px;
+  color: rgb(17, 17, 17);
+  font-weight: bolder;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+/* Testimonials section */
+
+.carousel-bg {
+  background-color: none;
+  margin-top: 40px;
+  margin-bottom: 0;
+  background: rgba(105, 93, 93, 0.1);
+}
+
+.quote-image {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 80px;
+  border-radius: 50px;
+}
+/* text-style */
+.testimonial-style .testimonial-caption-style {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  color: #354052;
+  line-height: 30px;
+  bottom: 40%;
+  text-shadow: none;
+  top: 10%;
+}
+.testimonial-style .testimonial-authors {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  color: #354052;
+  line-height: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+/* carousel-height-control */
+.testimonial-style .carousel-inner > .item {
+  padding-top: auto;
+  padding-bottom: auto;
+  margin-bottom: 80px;
+  height: 380px;
+}
+/* carousel-left-right-control */
+.testimonial-style .carousel-control.left {
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.testimonial-style .carousel-control.right {
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.testimonial-style .carousel-control {
+  color: #354052;
+}
+.testimonial-style .carousel-control:hover {
+  color: #354052;
+  text-decoration: none;
+  transition: background-color 1s ease;
+}
+/* indicators */
+.testimonial-style .carousel-indicators .active {
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.testimonial-style .carousel-indicators li {
+  border: 2px solid #354052;
+  background-color: #354052;
+}
+
+/* Contact Section */
+
+.contact-section {
+  padding: 20px;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.contact-title {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(70, 70, 222);
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.contact {
+  padding: 50px;
+  text-align: center;
+  background-image: url(./images/WhatsApp\ Image\ 2023-05-30\ at\ 11.50.38.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.contact form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact input[type="submit"] {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+  background-color: #ccc;
+  color: #312828;
+}
+
+/* Footer Section */
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #337ab7;
+}
+
+
+/*@media screen and (max-width: 768px) {
+  .navbar li {
+    margin: 0 10px;
+  }
+
+  .company-intro{
+    display: unset;
+  }
+
+  .company-intro .content {
+    padding: 20px;
+  }
+
+  .services {
+    padding: 20px;
+  }
+
+  .trip-card {
+    margin: 10px;
+  }
+
+  .gallery {
+    padding: 20px;
+  }
+
+  .contact {
+    padding: 20px;
+  }
+
+  .contact form {
+    max-width: 100%;
+  }
+}*/ 
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for mobile screens */
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  /* Banner Section */
+  .banner {
+    text-align: center;
+  }
+
+  /* About Section */
+  .company-intro {
+    text-align: center;
+  }
+  .company-intro .photo {
+    display: none;
+  }
+
+  /* Day Trips Section */
+  .dayTrip-section .cards-wrapper {
+    flex-direction: column;
+  }
+  .dayTrip-section .card {
+    margin-bottom: 20px;
+  }
+
+  /* Services Section */
+  .services .trip-card {
+    margin-bottom: 30px;
+  }
+
+  /* Company Gallery Section */
+  .gallery .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  /* Contact info Section */
+  .contact-section .contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjust styles for tablet screens */
+  /* Banner Section */
+  .banner {
+    text-align: center;
+  }
+
+  /* About Section */
+  .company-intro {
+    text-align: center;
+  }
+  .company-intro .photo {
+    display: none;
+  }
+
+  /* Day Trips Section */
+  .dayTrip-section .cards-wrapper {
+    flex-direction: column;
+  }
+  .dayTrip-section .card {
+    margin-bottom: 20px;
+  }
+
+  /* Services Section */
+  .services .trip-card {
+    margin-bottom: 30px;
+  }
+
+  /* Company Gallery Section */
+  .gallery .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  /* Contact info Section */
+  .contact-section .contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
